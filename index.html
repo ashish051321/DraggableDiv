@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src=""></script>
+    <style type="text/css" media="all">
+        div.movable{
+            padding:10px;
+            border:1px solid black;
+            width:50%;
+            margin: 0 auto;
+            background-color:cyan;
+            margin-top: 10px;
+            letter-spacing:2px;
+            font-size:1.2em;
+            position:absolute;
+            user-select: none;
+            top: 0px;
+            left:0px;
+            
+        }
+        div.movable > div.header{
+            height:20px;
+            background: lightblue;
+            cursor: move;
+            margin-left:-10px;
+            margin-right:-10px;
+            margin-top:-10px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size:initial;
+            border-bottom: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    Hey this is working fine !
+    <div class="movable" id="moveit" style="left:0px; top:0px">
+        <div class="header">This is my movable div</div>
+        <ul>
+            <li>Delhi</li>
+            <li>Bangalore</li>
+            <li>Pune</li>
+            <li>Mumbai</li>
+            <li>Hyderabad</li>
+        </ul>
+    </div>
+    <script src="myjs.js" type="application/javascript" charset="utf-8"></script>
+</body>
+</html>
